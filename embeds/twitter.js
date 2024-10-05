@@ -11,7 +11,7 @@ const tweetembed = (tweetTitle,tweetLink,tweetImage) => {
     if (tweetTitle !== undefined && tweetTitle!=='.') {
         embed.setDescription(tweetTitle)
     }
-    if (tweetImage !== undefined) {
+    if (tweetImage !== undefined && !tweetImage.includes('video')) {    
         embed.setImage(tweetImage)
     }
 
